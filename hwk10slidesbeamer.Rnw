@@ -71,7 +71,7 @@ ggplot(penguins, aes(x = body_mass_g, y = bill_length_mm, color = species)) +
 \end{frame}
 
 \begin{frame}{CV Link}
-You can read my CV here \url{https://ctangen28.github.io}
+You can read my CV here \url{https://ctangen28.github.io/CTangenCV/main.pdf}
 \end{frame}
 
 \end{document}
