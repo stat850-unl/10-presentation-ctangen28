@@ -1,0 +1,53 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+% More predefined colors can be found in
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+
+\boldname{Tangen}{Cassie}{K.}
+
+\begin{document}
+
+% Heading
+%\headinginline{Cassandra Tangen}{
+%    Email: \email{ctangen@peru.edu} \\
+%    GitHub: \github{ctangen28} \\
+%}
+
+ \headingphoto{Cassandra Tangen}{
+%     Website: \website{example.com} \\
+     Email: \email{ctangen@peru.edu} \\
+     GitHub: \github{ctangen28}
+ }{ctangenheadshot.jpg}
+
+% Page One
+\import{sections/}{education.tex}
+\import{sections/}{experience.tex}
+\import{sections/}{publications.tex}
+
+\pagebreak
+
+% Page Two
+\import{sections/}{teaching.tex}
+\sidebyside
+    {\import{sections/}{skills.tex}}
+    {\import{sections/}{languages.tex}}
+\import{sections/}{projects.tex}
+\import{sections/}{awards.tex}
+
+\pagebreak
+% Page Three
+\import{sections/}{extracurricular.tex}
+
+\end{document}
