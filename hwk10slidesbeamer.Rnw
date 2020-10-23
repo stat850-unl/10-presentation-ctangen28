@@ -55,18 +55,19 @@
 
 
 
-\begin{frame}{My Favorite Plot}
-<<echo=FALSE,results='hide'>>=
+
+\begin{frame}[fragile]{My Favorite Plot}
+<<echo=FALSE, message = FALSE,warning=FALSE>>=
 if (!"palmerpenguins" %in% installed.packages()) {
-  remotes::install_github("allisonhorst/palmerpenguins")
+remotes::install_github("allisonhorst/palmerpenguins")
 }
 library(palmerpenguins)
 library(ggplot2)
 library(grDevices)
 
 ggplot(penguins, aes(x = body_mass_g, y = bill_length_mm, color = species)) +
-  geom_point(shape="P", size=10)+ scale_color_manual(values=c("#8915E2", "#E21590", "#E215D4"))+ theme(text=element_text(family="mono",size=6),
-  panel.background = element_rect(fill = "#B215E2", colour = "#FF8000",size=1,linetype = "solid"),panel.grid.major = element_line(size = .5, linetype = 'dotted',colour = "#FF8000"),panel.grid.minor = element_line(size = 0.25, linetype = 'dashed',colour = "#FF8000"))+ labs(title = "Ugly Penguin Graph",subtitle = "Created by Cassie Tangen")
+geom_point(shape="P", size=10)+ scale_color_manual(values=c("#8915E2", "#E21590", "#E215D4"))+ theme(text=element_text(family="mono",size=6),
+panel.background = element_rect(fill = "#B215E2", colour = "#FF8000",size=1,linetype = "solid"),panel.grid.major = element_line(size = .5, linetype = 'dotted',colour = "#FF8000"),panel.grid.minor = element_line(size = 0.25, linetype = 'dashed',colour = "#FF8000"))+ labs(title = "Ugly Penguin Graph",subtitle = "Created by Cassie Tangen")
 @
 \end{frame}
 
