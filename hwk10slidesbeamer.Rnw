@@ -48,7 +48,7 @@
 \begin{frame}{Cat Person}
 \begin{figure}
     \centering
-    \includegraphics[width=6cm]{c:/Users/ctangen/Desktop/STAT850/10-presentation-ctangen28/Kaylee&Hazard.jpg}
+    \includegraphics[width=6cm]{Kaylee&Hazard.jpg}
     \caption{My cat Hazard with my oldest child Kaylee}
 \end{figure}
 \end{frame}
